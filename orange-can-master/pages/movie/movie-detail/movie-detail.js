@@ -10,7 +10,7 @@ Page({
     var url = movieId.startsWith('old')
       ? app.globalData.doubanOld +"/v2/movie/subject/"+
       movieId.substr('old'.length)
-      : app.globalData.doubanBase +"v2/movie/subject/"+movieId;
+      : app.globalData.doubanBase +"/subject/"+movieId;
     // var url1 = "http://t.yushu.im/v2/movie/subject/" + movieId;
     util.http(url, this.processDoubanData)
     //util.http(url1, this.processDoubanData)
